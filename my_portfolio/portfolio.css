@@ -8,10 +8,25 @@
 }
 
 body{
-    background: rgb(1, 9, 36);
+    background: linear-gradient(-45deg, #d2001a, #7462ff, #f48e21, #23d5ab);
+    background-size: 400% 400%;
+    animation: animate 15s ease infinite;
 }
+
+@keyframes animate{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
 span{
-    color: #7FC7D9;
+    color: #99ecff;
 }
 .container{
     width: 100%;
@@ -23,11 +38,13 @@ nav{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 50px;
-    background: rgb(1, 9, 36);
-    padding: 20px 30px;
+    height: 90px;
+    background-size: 400% 400%;
+    /* background: rgb(1, 9, 36); */
+    padding-inline: 10vw;
     z-index: 100;
     align-items: center;
+    transition: .3s;
 }
 .nav .logo{
     position: relative;
@@ -69,10 +86,158 @@ nav{
     transform: translate(-50%, -50%);
     width: 100%;
     height: 2px;
-    background: #7FC7D9;
+    background: #99ecff;
     transition: .4s;
 }
 /* .active-link:hover::after{
     width: 100%;
 } */
 
+.wrapper{
+    padding-inline: 10vw;
+}
+
+.featured-box{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    min-height: 700px;
+}
+
+.featured-text{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 20px;
+    margin-top: 10%;
+}
+
+.featured-text .hello{
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: -20px;
+    color: aliceblue;
+}
+
+.featured-name{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #99ecff;
+    margin-bottom: 10px;
+}
+
+.typedText{
+    font-family: sans-serif;
+    color: #99ecff;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.text-info{
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: aliceblue;
+}
+
+.text-btn{
+    display: flex;
+    border-radius: 8px;
+    cursor: pointer;
+    gap: 20px;
+}
+
+.text-btn .btn{
+    border: none;
+    color: #1a1a1a;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.btn{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #99ecff;
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+
+.btn i{
+    margin-right: 10px;
+}
+
+i{
+    font-size: 16px;
+}
+
+.social_icons{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 5px;
+    gap: 10px;
+}
+
+.social_icons .button{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    float: left;
+    overflow: hidden;
+    margin: 0 5px;
+    background: #99ecff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-out;
+}
+
+.social_icons .button:nth-child(1):hover .icon{
+    background: #e1306c;
+}
+.social_icons .button:nth-child(2):hover .icon{
+    background: #0077b5;
+}
+.social_icons .button:nth-child(3):hover .icon{
+    background: #1da1f2;
+}
+.social_icons .button:nth-child(4):hover .icon{
+    background: #333;
+}
+
+.social_icons .button:hover{
+    width: 150px;
+}
+
+.social_icons .button .icon{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 40px;
+    transition: all 0.4s ease-out;
+}
+
+.social_icons .button .icon i{
+    line-height: 40px;
+    font-size: 20px;
+    transition: all 0.4s ease-out;
+}
+.social_icons .button:hover .icon i{
+    color: aliceblue;
+}
+
+.social_icons .button span{
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-left: 5px;
+    color: #1a1a1a;
+}
