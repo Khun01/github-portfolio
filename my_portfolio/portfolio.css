@@ -324,6 +324,7 @@ i{
     display: block;
     margin: auto;
     padding-top: 100px;
+    padding-bottom: 100px;
 }
 .projects-title{
     display: flex;
@@ -375,3 +376,109 @@ i{
 }
 /* End Projects section */
 
+/* Contact section */
+.contact-container{
+    padding-top: 2rem;
+    padding-inline: 15vh;
+    padding-bottom: 2rem;
+}
+
+.section-title{
+    color: aliceblue;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.section-subtitle{
+    margin-top: 5rem;
+    color: aliceblue;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form,
+.contact-group{
+    display: grid;
+    row-gap: 1rem;
+}
+
+.contact-from{
+    position: relative;
+}
+
+.contact-input{
+    padding: 1rem 1.25rem;
+    border-radius: .5rem;
+    background-color: #99ecff41;
+    color: aliceblue;
+}
+
+.contact-input::placeholder{
+    color: aliceblue;
+}
+
+.contact-form textarea{
+    height: 11rem;
+    resize: none;
+    margin-bottom: 2rem;
+}
+
+.contact-button{
+    justify-self: center;
+    cursor: pointer;
+    padding: 10px;
+    background: #99ecff;
+    font-size: 15px;
+    border-radius: 10px;
+    color: #1a1a1a;
+}
+
+.contact-message{
+    position: absolute;
+    left: 0;
+    bottom: 4.5rem;
+    font-size: 20px;
+    color: aliceblue;
+}
+/* End of contact section */
+
+
+/* Footer section */
+
+.footer-container{
+    width: 100%;
+    background: #022730;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.footer-info{
+    text-align: center;
+    color: aliceblue;
+}
+.footer-info h5{
+    font-weight: 400;
+}
+.footer-social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#Footer .social-item img {
+    width: 50px;
+    height: 50px;
+    filter: grayscale(1);
+    transition: 0.3s ease filter;
+}
+#Footer .social-item:hover img {
+    filter: grayscale(0);
+}
+/* End of footer section */
